@@ -11,14 +11,42 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            title: Text("Home page"),
-            backgroundColor: Colors.amber,
+            leading: Icon(Icons.menu),
+            actions: [Icon(Icons.report_gmailerrorred)],
+            title: Text(
+              "Hello Flutter",
+
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            backgroundColor: Colors.blue,
+            centerTitle: true,
           ),
-          body: Container(height: 800, width: 500, color: Colors.blue),
+
+          body: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+
+            child: Row(
+              children: [
+                Container(width: 150, height: 150, color: Colors.red),
+                SizedBox(width: 10),
+
+                Container(width: 150, height: 150, color: Colors.yellow),
+
+                SizedBox(width: 10),
+
+                Container(width: 150, height: 150, color: Colors.teal),
+                SizedBox(width: 10),
+                Container(width: 150, height: 150, color: Colors.pinkAccent),
+              ],
+            ),
+          ),
         ),
       ),
     );
