@@ -14,8 +14,13 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            leading: Icon(Icons.menu),
-            actions: [Icon(Icons.report_gmailerrorred)],
+            leading: Icon(Icons.menu, color: Colors.purple),
+            actions: [
+              Icon(
+                Icons.report_gmailerrorred,
+                color: const Color.fromARGB(255, 34, 255, 226),
+              ),
+            ],
             title: Text(
               "Hello Flutter",
 
@@ -44,6 +49,7 @@ class MyApp extends StatelessWidget {
                 Container(width: 150, height: 150, color: Colors.teal),
                 SizedBox(width: 10),
                 Container(width: 150, height: 150, color: Colors.pinkAccent),
+                Container(width: 150, height: 150, color: Colors.black),
               ],
             ),
           ),
