@@ -11,8 +11,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+
       home: SafeArea(
         child: Scaffold(
+          appBar: AppBar(
+            title: Text("Home page"),
+            backgroundColor: Colors.amber,
+          ),
           body: Container(height: 800, width: 500, color: Colors.blue),
         ),
       ),
