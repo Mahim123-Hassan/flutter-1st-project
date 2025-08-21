@@ -34,24 +34,21 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
           ),
 
-          body: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
+          body: ListView(
+            children: [
+              Container(width: 150, height: 150, color: Colors.red),
+              SizedBox(height: 10),
 
-            child: Row(
-              children: [
-                Container(width: 150, height: 150, color: Colors.red),
-                SizedBox(width: 10),
+              Container(width: 150, height: 150, color: Colors.yellow),
 
-                Container(width: 150, height: 150, color: Colors.yellow),
+              SizedBox(height: 10),
 
-                SizedBox(width: 10),
-
-                Container(width: 150, height: 150, color: Colors.teal),
-                SizedBox(width: 10),
-                Container(width: 150, height: 150, color: Colors.pinkAccent),
-                Container(width: 150, height: 150, color: Colors.black),
-              ],
-            ),
+              Container(width: 150, height: 150, color: Colors.teal),
+              SizedBox(height: 10),
+              Container(width: 150, height: 150, color: Colors.pinkAccent),
+              SizedBox(height: 10),
+              Container(width: 150, height: 150, color: Colors.black),
+            ],
           ),
         ),
       ),
